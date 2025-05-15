@@ -5,7 +5,8 @@ app = Flask(__name__, static_folder='static', template_folder='templates')
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return '<h1>¡La app funciona correctamente!</h1>'
+
 
 # Este bloque solo se ejecuta si corres python app.py localmente
 if __name__ == '__main__':
