@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <title>Hola Mundo</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .boton:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>¡Hola Mundo desde Flask!</h1>
         <p>Tu aplicación se ha desplegado con éxito.🥳</p>
+        <a class="boton" href="https://distributed-architecture.vercel.app/" target="_blank">
+            Ir a la aplicación
+        </a>
     </div>
 </body>
 </html>
